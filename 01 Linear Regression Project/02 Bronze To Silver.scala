@@ -79,4 +79,4 @@ deltaTable
 
 // COMMAND ----------
 
-
+dbutils.notebook.exit("Bronze to Silver Processing Complete")
