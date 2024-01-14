@@ -1,0 +1,24 @@
+// Databricks notebook source
+// MAGIC %sql
+// MAGIC CREATE DATABASE shipinfo
+
+// COMMAND ----------
+
+// MAGIC %sql
+// MAGIC CREATE TABLE IF NOT EXISTS shipinfo.cruise_ship (
+// MAGIC SHIP_NAME STRING,
+// MAGIC CRUISE_LINE STRING,
+// MAGIC AGE INT,
+// MAGIC TONNAGE DOUBLE,
+// MAGIC PASSENGERS DOUBLE,
+// MAGIC LENGTH DOUBLE,
+// MAGIC CABINS DOUBLE,
+// MAGIC PASSENGER_DENSITY DOUBLE,
+// MAGIC CREW DOUBLE
+// MAGIC )
+// MAGIC USING delta
+// MAGIC LOCATION '/mnt/cruise-ship/silver/cruise_ship'
+
+// COMMAND ----------
+
+
